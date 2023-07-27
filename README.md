@@ -22,7 +22,7 @@ bitbucket-auto-pr make-pr
 ```
 or
 ```bash
-bitbucket-auto-pr make-pr <library name> <library version>
+bitbucket-auto-pr make-pr -w <workspace> -s <slug> -d <dependency> -v <version>
 ```
 
 ## For help
