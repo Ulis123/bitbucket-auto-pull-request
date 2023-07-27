@@ -1,0 +1,42 @@
+{
+  "name": "new-test",
+  "version": "0.1.0",
+  "description": "",
+  "main": "bin/index.js",
+  "bin": {
+    "bitbucket-auto-pr": "./bin/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "npx tsc -w",
+    "start": "node --experimental-specifier-resolution=node bin/index.js",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^3.0.0",
+    "bitbucket": "^2.11.0",
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0",
+    "ora": "^6.3.1",
+    "semver": "^7.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.4",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
+    "types-package-json": "^2.0.39",
+    "typescript": "^5.1.6"
+  }
+}
